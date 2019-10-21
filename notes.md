@@ -438,8 +438,14 @@ https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/62
 npm install --save-exact @babel/runtime@7.0.0-beta.55
 ```
 
-Seems to work now.
+It seemed to work, but after it stopped working again for a reason I don't know.
 
+I deleted the node_modules folder and there was a yarn.lock file that I don't
+know why it was in there, since I didn't use yarn. I removed that as well.
+
+I reinstalled the modules and now it's working fine.
+
+Not sure what happened.
 ---
 
 

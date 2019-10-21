@@ -207,17 +207,12 @@ leave index.js out of the import statement and just list the directory and it
 will look into an index.js file automatically, so we don't have to specify the
 exact file because indes.js is the default
 
-Note that since updateTitle is defined inside src/actions/index.js we can just
-leave index.js out of the import statement and just list the directory and it
-will look into an index.js file automatically, so we don't have to specify the
-exact file because index.js is the default.
-
 This updateTitle action is used inside the object that is the second parameter in the `connect` function, at the bottom of Title.js
 
 It's important to note that the action creator updateTitle is not used by Title,
 it's only used in the connect function.
 
-Title (the component) can only we use updateTitle from the props like in this
+Title (the component) can only use updateTitle from the props like in this
 statement:
 
 ```

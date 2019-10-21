@@ -1,6 +1,6 @@
 # Redux
 
-Video: https://youtu.be/a5PYedGVDBY?t=2400
+Video: https://youtu.be/a5PYedGVDBY?t=5952
 
 
 
@@ -444,4 +444,8 @@ npm install --save-exact @babel/runtime@7.0.0-beta.55
 ```
 
 Seems to work now.
+
+---
+
+
 

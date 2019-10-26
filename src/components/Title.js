@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { updateTitle } from '../actions';
+import { updateTitle, turnTitleGreen } from '../actions';
 
 class Title extends React.Component {
   state = {
@@ -16,10 +16,19 @@ class Title extends React.Component {
     this.props.updateTitle(this.state.newTitleText)
   }
 
+  handleTitleGreen = e => {
+    e.preventDefault();
+    this.props.turnTitleGreen();
+  }
+
   render() {
     return (
       <div>
-        <h1>{this.props.titleOnProps}</h1>
+        <h1
+          style={{ color: this.props.titleColor }}
+          onClick={this.handleTitleGreen}>
+          {this.props.titleOnProps}
+        </h1>
 
         <input
           type="text"
@@ -37,11 +46,12 @@ class Title extends React.Component {
 const mapStateToProps = state => {
   console.log("on state in Title:", state)
   return {
-    titleOnProps: state.title
+    titleOnProps: state.title,
+    titleColor: state.titleColor
   }
 }
 
 export default connect(
   mapStateToProps,
-  { updateTitle }
+  { updateTitle, turnTitleGreen }
 )(Title);

@@ -56,6 +56,9 @@ const reducer = () => {
 }
 ```
 
+
+
+
 Redux is not just for React, you can use Redux in any Javascript application. 
 To use it with React we use the react-redux library.
 
@@ -71,6 +74,15 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root'));
 ```
+
+
+
+
+>>>>>>>>> Material for articles below
+
+
+
+
 
 
 Connecting to redux from a component.
@@ -321,12 +333,9 @@ import reducer from './reducers';
 ```
 
 The reducer since it's going to change the state needs to know about the
-existing state and about the action that we use to modify the state, so we pass
-state and action into it as arguments.
+existing state and about the action that we use to modify the state, so we pass state and action into it as arguments.
 
-We also create a const for the initial application state and we set the state
-argument to this initial state, so if the state is not defined, it defaults to
-the initial state.
+We also create a const for the initial application state and we set the state argument to this initial state, so if the state is not defined, it defaults to the initial state.
 
 ```
 // src/reducers/index.js
@@ -447,6 +456,8 @@ I reinstalled the modules and now it's working fine.
 
 Not sure what happened.
 ---
+
+
 
 
 
